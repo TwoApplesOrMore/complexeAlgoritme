@@ -1,5 +1,0 @@
-Testsize is: 100000, average duration: 29 ms.
-Testsize is: 200000, average duration: 77 ms.
-Testsize is: 500000, average duration: 148 ms.
-Testsize is: 1000000, average duration: 247 ms.
-Testsize is: 5000000, average duration: 3014 ms.
