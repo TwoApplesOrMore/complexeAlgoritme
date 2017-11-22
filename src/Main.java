@@ -8,17 +8,39 @@ public class Main {
 
     private Random RNG = new Random();
     private boolean usedNumber[];
+    private Utils utils = new Utils();
 
     private void run() {
 
 
-        int [] simplePermutationList = simplePermutation(10000);
-        int [] swapPermutationList = swapPermutation(10000);
-        usedArrayPermitation(10000);
+        //int [] simplePermutationList = simplePermutation(10000);
+        //int [] swapPermutationList = swapPermutation(10000);
+
+        int testSizes[] = {100000, 200000, 500000, 1000000, 5000000, 10000000};
+        long totaltime = 0;
+        for(int i = 0; i < testSizes.length; i++) {
+            for(int j = 0; j < 10; j++) {
+
+                long starttime = System.nanoTime();
+                usedArrayPermitation(testSizes[i]);
+                long duration = (System.nanoTime() - starttime) / 1000000;
+                totaltime += duration;
+            }
+
+            long average = totaltime / 10;
+            utils.storeResult("Testsize is: " + testSizes[i] + ", average duration: " + average + " ms.");
+            totaltime = 0;
+        }
+
 
 
     }
 
+    /**
+     *
+     * @param numbersAmount
+     * @return
+     */
     public int [] simplePermutation(int numbersAmount){
         long startTimeSimple = System.nanoTime();
 
@@ -40,6 +62,14 @@ public class Main {
 
         return permutationList;
     }
+
+    /**
+     *
+     * @param list
+     * @param number
+     * @param bound
+     * @return
+     */
     private boolean numberExists(int[] list, int number, int bound){
         for(int j = 0; j< bound; j++){
             if(number == list[j]){
@@ -50,6 +80,11 @@ public class Main {
     }
 
 
+    /**
+     *
+     * @param numbersAmount
+     * @return
+     */
     public int [] swapPermutation(int numbersAmount) {
         long startTimeSwap = System.nanoTime();
 
@@ -73,8 +108,12 @@ public class Main {
         return permutationList;
     }
 
+    /**
+     *
+     * @param size
+     * @return
+     */
     private int[] usedArrayPermitation(int size) {
-        long startTime = System.nanoTime();
         usedNumber = new boolean[size];
         int permitation[] = new int[size];
         for(int i = 0; i < size; i++) {
@@ -89,8 +128,6 @@ public class Main {
                 }
             }
         }
-        long duration = (System.nanoTime() - startTime) / 1000000;
-        System.out.println("Duration: " + duration);
         return permitation;
     }
 

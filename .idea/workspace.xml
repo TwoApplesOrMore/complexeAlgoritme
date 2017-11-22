@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a6c23f5-d4a2-4d08-a777-d5d39e9792d6" name="Default" comment="" />
+    <list default="true" id="3a6c23f5-d4a2-4d08-a777-d5d39e9792d6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ComplexeAlgoritmen/Main.class" afterPath="$PROJECT_DIR$/out/production/ComplexeAlgoritmen/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +21,40 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#114#115#0" expanded="true" />
                 <element signature="e#146#147#0" expanded="true" />
+                <element signature="docComment;method#simplePermutation#0;class#Main#0" expanded="false" />
+                <element signature="method#simplePermutation#0;class#Main#0" expanded="false" />
+                <element signature="docComment;method#numberExists#0;class#Main#0" expanded="false" />
+                <element signature="method#numberExists#0;class#Main#0" expanded="false" />
+                <element signature="docComment;method#swapPermutation#0;class#Main#0" expanded="false" />
+                <element signature="method#swapPermutation#0;class#Main#0" expanded="false" />
+                <element signature="docComment;method#usedArrayPermitation#0;class#Main#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,6 +80,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Utils.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -57,7 +92,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
   </component>
@@ -86,6 +121,11 @@
               <item name="ComplexeAlgoritmen" type="b2602c69:ProjectViewProjectNode" />
               <item name="opdracht1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ComplexeAlgoritmen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opdracht1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -99,6 +139,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../concurrency/T[DE]10VanGastelScholtenOpdracht1" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -219,12 +260,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511352234991</updated>
-      <workItem from="1511352239069" duration="3828000" />
+      <workItem from="1511352239069" duration="5605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3828000" />
+    <option name="totallyTimeSpent" value="5605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -270,14 +311,39 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/results.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#114#115#0" expanded="true" />
             <element signature="e#146#147#0" expanded="true" />
+            <element signature="docComment;method#simplePermutation#0;class#Main#0" expanded="false" />
+            <element signature="method#simplePermutation#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#numberExists#0;class#Main#0" expanded="false" />
+            <element signature="method#numberExists#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#swapPermutation#0;class#Main#0" expanded="false" />
+            <element signature="method#swapPermutation#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#usedArrayPermitation#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
