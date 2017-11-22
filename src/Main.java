@@ -4,6 +4,8 @@ public class Main {
     }
 
     private void run() {
-        System.out.println("Fuck my life");
+        System.out.println("Fuck my life aids");
     }
+
+    public void
 }
