@@ -17,7 +17,7 @@ public class PermutationAlgoritmTest {
     public void simplePermutation() throws Exception {
         int [] simplePermutation =  main.simplePermutation(NUMBERS_AMOUNT);
 
-        for(int i =0; i<simplePermutation.length; i++){}
+        for(int i =0; i<simplePermutation.length; i++) {}
     }
 
     @Test

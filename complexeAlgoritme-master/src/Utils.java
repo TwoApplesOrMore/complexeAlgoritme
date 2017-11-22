@@ -4,7 +4,6 @@ import java.io.IOException;
 
 public class Utils {
 
-
     public Utils() {
 
     }
@@ -17,7 +16,7 @@ public class Utils {
     public void storeResult(String result) {
         BufferedWriter writer = null;
         try {
-            writer = new BufferedWriter(new FileWriter("results.txt", true));
+            writer = new BufferedWriter(new FileWriter("results-sorting.txt", true));
             writer.write(result);
             writer.newLine();
             writer.flush();
