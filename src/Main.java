@@ -10,8 +10,67 @@ public class Main {
     private boolean usedNumber[];
 
     private void run() {
-        usedArrayPermitation(1000000);
-        //System.out.println(Arrays.toString(usedArrayPermitation(100000)));
+
+
+        int [] simplePermutationList = simplePermutation(10000);
+        int [] swapPermutationList = swapPermutation(10000);
+        usedArrayPermitation(10000);
+
+
+    }
+
+    public int [] simplePermutation(int numbersAmount){
+        long startTimeSimple = System.nanoTime();
+
+        int [] permutationList = new int[numbersAmount];
+        for(int i = 0 ; i<numbersAmount; i++){
+            boolean numberfound = false;
+            while(!numberfound){
+                Random rng = new Random();
+                int randomNumber = rng.nextInt(numbersAmount);
+
+                if(!numberExists(permutationList,randomNumber,i)) {
+                    permutationList[i] = randomNumber;
+                    numberfound = true;
+                }
+            }
+        }
+        long elapsedTimeSimple = System.nanoTime() - startTimeSimple;
+        System.out.println(elapsedTimeSimple/1000000);
+
+        return permutationList;
+    }
+    private boolean numberExists(int[] list, int number, int bound){
+        for(int j = 0; j< bound; j++){
+            if(number == list[j]){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    public int [] swapPermutation(int numbersAmount) {
+        long startTimeSwap = System.nanoTime();
+
+        int[] permutationList = new int[numbersAmount];
+        for (int i = 0; i < numbersAmount; i++) {
+            permutationList[i] = i;
+        }
+
+        for (int j = 0; j < numbersAmount; j++) {
+            Random rng = new Random();
+            int randomNumber = rng.nextInt(numbersAmount);
+
+            int temp = permutationList[j];
+            permutationList[j] = permutationList[randomNumber];
+            permutationList[randomNumber] = temp;
+        }
+
+        long elapsedTimeSwap = System.nanoTime() - startTimeSwap;
+        System.out.println(elapsedTimeSwap/1000000);
+
+        return permutationList;
     }
 
     private int[] usedArrayPermitation(int size) {
